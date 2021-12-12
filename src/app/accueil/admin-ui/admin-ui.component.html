@@ -1,0 +1,116 @@
+
+<br><br><br>
+<form #f="ngForm">
+  <input type="text" name="sName" style="margin-left: 50px;width: 900px;" placeholder="Search a place..." [(ngModel)]="search"  (input)="searching()" >
+</form>
+
+
+   
+    
+ 
+<!--
+
+
+     
+
+
+
+
+<div class="container-fluid">
+  <div class="row " *ngFor="let t of pac" >
+      <div class="col-7">
+        
+          <div class="card shadow ">
+              <div class="card-horizontal">
+                  <div class="img-square-wrapper">
+                      <img style="border-radius: 8px;"  [src]="t.photo2" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">{{t.libelle}}</h4>
+                      <span *ngIf="t.enpromo==true"  class="badge bg-success" > en promo</span>
+                      <p class="card-text">pour plus d'information cliquez sur le bouton details</p>
+
+                      <br><br><br><br>
+                      <button class="btn-hover color-11" (click)="removep(t.id)" >remove pack</button>
+                    
+                      
+                  </div>
+              </div>
+
+          </div>
+      </div> 
+          <div class="col-2" >
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;height: 350px;">
+              <div class="card-body">
+              <div class="card-title"><span style="transform: scale(2.5); font-weight: bold;" >{{t.prix}} DT</span><span style="color: rgb(136, 138, 137); transform: scale(0.5);" >/par personne</span></div>  
+              <br> 
+                <h6 class="card-subtitle mb-2 text-muted">  <p> Date depart : {{t.dateDep | date}}  </p></h6>
+                <div style="text-align: center;"> includes:
+
+                <br>
+               <span *ngIf="t.food==true" > <i class="fas fa-drumstick-bite"></i> food</span> <br>
+               <span *ngIf="t.activite==true" > <i class="fas fa-dice"></i> activities</span> <br>
+               <span *ngIf="t.excurs==true" > <i class="fas fa-globe"></i> excursion</span><br>
+              </div>
+                
+                <a [routerLink]="['/adminP',t.id]" class="card-link"  ><button type="button" class="btn-hover color-3" >Details</button></a>
+              </div>
+            </div>
+          </div>
+      
+      <br>
+  </div>
+</div>  -->
+
+
+
+<!-- 2eme meth template -->
+<div class="row">
+<div class="col-7 "  >
+
+  <ul class="list-group " style="width: 100%;box-shadow: 5px 5px 50px rgb(148, 143, 143);border-radius: 8px;" >
+
+    <li class="list-group-item" *ngFor="let t of pac" (click)="Fid(t.id)" [ngClass]="{'clicked':clickB}" style="height: 200px;" >
+
+      <img [src]="t.photo2" class="rounded float-start" style="width: 350px;height: 100%;object-fit: cover;" >
+      <div class="card-body" >
+        <h4 class="card-title" style="margin-left: 350px;">{{t.libelle}}</h4>
+        <span *ngIf="t.enpromo==true"  class="badge bg-success" style="margin-left: 10px;" > en promo</span>
+        
+        <p class="card-text" style="margin-left: 350px;">pour plus d'information cliquez sur le bouton details</p>
+
+        <br>
+      
+        <button type="button" class="btn btn-danger" style="margin-left: 300px;" (click)="removep(t.id)">remove</button>
+        <button type="button" class="btn btn-warning" [routerLink]="['/edit',t.id]" >edit</button>
+    </div>
+    </li>
+    
+  </ul>
+
+
+</div>
+
+<div class="col card " style="border-radius: 8px;width: 100%;  ">
+  <div style="position: fixed;width: 800px;"> 
+  <img [src]="packk.photo3" class="card-img-top" style="width: 100%;height: 300px;object-fit: cover;border-radius: 8px;" >
+  <div class="card-body">
+    <div class="card-title"><span style="transform: scale(2.5); font-weight: bold;font-size: 30px;" >{{prixAp(packk.prix,packk.poucentagePromo)}} DT</span><span style="color: rgb(136, 138, 137); transform: scale(0.5);" >/par personne</span>  <span style="margin-left: 20px;text-decoration: line-through;font-style: italic;" *ngIf="packk.enpromo==true" > {{packk.prix}} </span></div>  
+    <br> 
+      <h6 class="card-subtitle mb-2 text-muted">  <p> Date depart : {{packk.dateDep | date}}  </p></h6>
+      <div style="margin-left: 30%;"> includes:
+
+      <br>
+     <span *ngIf="packk.food==true" > <i class="fas fa-drumstick-bite"></i> food</span> <br>
+     <span *ngIf="packk.activite==true" > <i class="fas fa-dice"></i> activities</span> <br>
+     <span *ngIf="packk.excurs==true" > <i class="fas fa-globe"></i> excursion</span><br>
+    </div>
+      
+      <a  style="margin-left: 10%;" [routerLink]="['/adminP',packk.id]" class="card-link"  ><button type="button" class="btn-hover color-3" >Details</button></a>
+      <a [routerLink]="['/addPack']"><button class="btn-hover color-9" >add pack</button></a> 
+    </div> </div>
+  
+</div>
+
+
+</div>

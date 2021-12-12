@@ -1,0 +1,54 @@
+<br><br><br><br><br><br>
+      
+
+
+
+<div class="container-fluid">
+  <div class="row " *ngFor="let t of pac" >
+      <div class="col-8">
+        
+          <div class="card shadow ">
+              <div class="card-horizontal">
+                  <div class="img-square-wrapper">
+                      <img style="border-radius: 8px;"  [src]="t.photo2" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">{{t.libelle}}</h4>
+                      <span *ngIf="t.enpromo==true"  class="badge bg-success" > en promo</span>
+                      <p class="card-text" style="text-align: left; width: 400px; font-size:10px ;">{{t.tabinfo}}  </p>
+                      <br>
+                      <h6>pour plus d'information cliquez sur le bouton details</h6>
+
+                      
+                    
+                    
+                      
+                  </div>
+              </div>
+
+          </div>
+      </div> 
+          <div class="col-4" >
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;height: 350px;">
+              <div class="card-body">
+              <div class="card-title"><span style="color: rgb(0, 1, 82); font-weight: bold;font-size: 20px;" >{{prixAp(t.prix,t.poucentagePromo)}} DT</span><span style="color: rgb(136, 138, 137); transform: scale(0.5);" >/par personne</span>  <span style="margin-left: 20px;text-decoration: line-through;font-style: italic;" *ngIf="t.enpromo==true" > {{t.prix}} </span></div>  
+              <br> 
+                <h6 class="card-subtitle mb-2 text-muted">  <p> Date depart : {{t.dateDep | date}}  </p></h6>
+                <div style="text-align: center;"> includes:
+
+                <br>
+               <span *ngIf="t.food==true" > <i class="fas fa-drumstick-bite"></i> food</span> <br>
+               <span *ngIf="t.activite==true" > <i class="fas fa-dice"></i> activities</span> <br>
+               <span *ngIf="t.excurs==true" > <i class="fas fa-globe"></i> excursion</span><br>
+              </div>
+                
+                <a [routerLink]="['/allPacks',t.id]" class="card-link"  ><button type="button" class="btn-hover color-3" >Details</button></a>
+              </div>
+            </div>
+          </div>
+      
+      <br>
+  </div>
+</div>
+
+

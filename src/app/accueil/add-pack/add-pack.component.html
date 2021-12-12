@@ -1,0 +1,107 @@
+
+<br><br><br><br><br>
+
+<div class="container">
+
+    <form [formGroup]="pacfrm"  (ngSubmit)="onSub(); pacfrm.reset()" >
+
+
+         
+        <div class="form-group">
+            <label > <h6>libelle</h6> </label>
+            <input type="text" class="form-control" formControlName="libelle"  placeholder="Paris,Barcelone...">
+          </div>
+          
+          <br>
+          <div class="form-group">
+            <label >prix</label>
+            <input type="number" class="form-control"  formControlName="prix">
+          </div>
+          <br>
+
+          <div class="form-group">
+            <label >information</label>
+            <div *ngFor="let p of tabinfos.controls; let i=index">
+                <textarea class="form-control" [formControlName]="i"  rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-secondary btn-sm" (click)="ajouterchamp()" >ajouter info</button>
+          </div>
+
+          <br>
+
+          <div class="form-group">
+            <label > <h6>photo 1</h6> </label>
+            <select class="form-control" formControlName="photo" >
+              <option *ngFor="let t of pac"  >{{t.photo}}</option>
+
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label > <h6>photo 2</h6> </label>
+            <select class="form-control" formControlName="photo2" >
+              <option *ngFor="let t of pac"  >{{t.photo2}}</option>
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label ><h6>photo 3</h6>  </label>
+            <select class="form-control" formControlName="photo3" >
+              <option *ngFor="let t of pac"  >{{t.photo3}}</option>
+
+            </select>
+          </div>
+
+          <br>
+        <div class="form-group">
+            <label ><h6>Date de depart</h6> </label>
+            <input type="date" class="form-control" formControlName="dateDep"  >
+          </div>
+
+          <br>
+          <div class="form-group">
+            <input type="checkbox" formControlName="enpromo"  > en promotion
+          </div>
+          <div>
+            <label >pourcentage promo</label>
+            <input type="text" formControlName="poucentagePromo" [value]="pack.poucentagePromo" >
+          </div>
+
+          <br>
+          <h6>includes :</h6>
+          <div class="form-group">
+            <input type="checkbox" formControlName="food"  ><i class="fas fa-drumstick-bite"></i> food 
+            <input type="checkbox"  formControlName="activite" ><i class="fas fa-dice"></i> activities
+            <input type="checkbox" formControlName="excurs"  ><i class="fas fa-globe"></i> excursion
+          </div>
+
+          <br>
+          <div class="form-group">
+            <label ><h6>residance</h6>  </label>
+            <select class="form-control" formControlName="masken" >
+              <option  >Villa</option>
+              <option  >appartement</option>
+              <option  >hotel</option>
+
+            </select>
+          </div>
+
+     <br>
+     <div [hidden]="!succ" class="alert alert-success" >pack ajoutée</div>     
+
+
+   <br><br>
+ <button type="submit">submit</button>
+ <button type="button" routerLink="/adminP">voir la liste des packs</button>
+
+ <br><br>
+ 
+    
+    
+    
+    
+    
+    </form>
+
+</div>
+

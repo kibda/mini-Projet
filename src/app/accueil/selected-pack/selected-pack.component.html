@@ -1,0 +1,37 @@
+
+
+<br><br><br>
+<div class="row" >
+    <div class="col-12">
+
+        <div class="card" style="width: 100%;">
+            <img class="card-img-top img" [src]="packs.photo3" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;" > {{packs.libelle}} </h5>
+              <p class="card-text" style="text-align: center;" >{{packs.tabinfo}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="text-align: center;" >
+                <span *ngIf="packs.food==true" > <i class="fas fa-drumstick-bite"></i> food</span> <br>
+                <span *ngIf="packs.activite==true" > <i class="fas fa-dice"></i> activities</span> <br>
+                <span *ngIf="packs.excurs==true" > <i class="fas fa-globe"></i> excursion</span><br>
+                <i class="fas fa-plane-departure" ></i><p> Date depart : {{packs.dateDep | date}}  </p>
+                <p>residance :  </p>
+                <div *ngIf="packs.masken=='villa'" > <i class="fas fa-store-alt"></i> villa  </div>
+                <div *ngIf="packs.masken=='appartement'" > <i class="fas fa-building"></i> appartement  </div>
+                <div *ngIf="packs.masken=='hotel'" > <i class="far fa-building"></i> hotel  </div>
+              </li>
+              <li class="list-group-item" style="text-align: center;">
+
+               
+                <div ><span style="transform: scale(2.5); font-weight: bold; color: green;" >{{packs.prix}} DT</span><span style="color: rgb(136, 138, 137); transform: scale(0.5);" >/par personne</span></div>
+              </li>
+             
+            </ul>
+           
+
+          </div>
+
+    </div>
+</div>
+
