@@ -1,0 +1,156 @@
+{
+  "packs": [
+    {
+      "id": 1,
+      "libelle": "Singapore",
+      "photo": "assets/safrat/singapore.jpg",
+      "prix": 4000,
+      "enpromo": true,
+      "dateDep": "2022-7-1",
+      "tabinfo": [
+        "Singapore",
+        "est une cité-État d'Asie du Sud-Est. Sa superficie est de 724,2 km27. Elle comprend 63 îles, dont la principale est Pulau Ujong (584,8 km2). Cette île est très densément urbanisée, mais la végétation luxuriante – même en plein centre-ville – a valu à Singapour le surnom de « ville jardin ». Cette abondance de verdure découle en partie d'un climat équatorial, uniformément chaud et orageux tout au long de l'année. Sa densité de population est la deuxième plus élevée au monde parmi les États indépendants (après Monaco). L'État de Singapour est situé à l'extrême sud de la péninsule Malaise, dont il est séparé au nord par le détroit de Johor, et borde au sud le détroit de Singapour."
+      ],
+      "excurs": false,
+      "food": true,
+      "activite": true,
+      "masken": "villa",
+      "photo2": "assets/singaporeSearch.jpg",
+      "photo3": "assets/singaporeP3.jfif",
+      "poucentagePromo": 20
+    },
+    {
+      "id": 2,
+      "libelle": "california",
+      "photo": "assets/safrat/california.jpg",
+      "prix": 2500,
+      "enpromo": true,
+      "dateDep": "2022-12-4",
+      "tabinfo": [
+        "California",
+        " est un État des États-Unis qui fait partie de la région de la Sun Belt dans l’Ouest américain. Avec 39 538 223 habitants selon le recensement officiel de 20202, la Californie est l'État le plus peuplé du pays. Il est situé sur la côte ouest et bordé au sud par le désert de Sonora, à l'est par le Grand Bassin des États-Unis et au nord par les monts Klamath. La façade océanique suit entièrement le relief des chaînes côtières du Pacifique au-delà desquelles s'étend la Vallée Centrale sur les contreforts de la Sierra Nevada"
+      ],
+      "excurs": false,
+      "food": true,
+      "activite": true,
+      "masken": "appartement",
+      "photo2": "assets/californiaSearch.jpg",
+      "photo3": "assets/californiaP3.jpg",
+      "poucentagePromo": 50
+    },
+    {
+      "id": 3,
+      "libelle": "rome",
+      "photo": "assets/safrat/rome.jpg",
+      "prix": 4000,
+      "enpromo": true,
+      "dateDep": "2022-09-7",
+      "tabinfo": [
+        "Rome",
+        "est la capitale de l'Italie. Située au centre-ouest de la péninsule italienne, près de la mer Tyrrhénienne, elle est également la capitale de la région du Latium. En 2019, elle compte 2 844 395 habitants établis sur 1 285 km2, ce qui fait d'elle la commune la plus peuplée d'Italie et la troisième plus étendue d'Europe après Moscou et Londres3. Son aire urbaine recense 4 356 403 habitants en 20164,5. Elle présente en outre la particularité de contenir un État enclavé dans son territoire : la cité-État du Vatican (Stato della Città del Vaticano), dont le pape est le souverain. C'est le seul exemple existant d'un État à l'intérieur d'une ville."
+      ],
+      "excurs": false,
+      "food": true,
+      "activite": false,
+      "masken": "appartement",
+      "photo2": "assets/romeSearch.jpg",
+      "photo3": "assets/romeP3.jpg",
+      "poucentagePromo": 60
+    },
+    {
+      "id": 4,
+      "libelle": "vietnam",
+      "photo": "assets/safrat/bali.jpg",
+      "prix": 3978,
+      "enpromo": true,
+      "dateDep": "2022-10-1",
+      "tabinfo": [
+        "Vietnam",
+        "est un pays d'Asie du Sud-Est, situé à l'est de la péninsule indochinoise. Il fait également partie de la sinosphère (sphère culturelle chinoise), aussi appelée sphère culturelle d'Asie de l'Est. Pendant plus d'un millénaire le Vietnam a été sous domination chinoise. Tout commença à partir de -111 av. J.-C. lorsque la dynastie Han s'empara du Nam Việt. Le Nam Việt ou Nanyue en chinois comprenait alors les provinces actuelles du Yunnan, du Guangxi et du Guangdong. La culture vietnamienne possède par conséquent de nombreux traits culturels communs avec la Chine, la Corée et le Japon. Depuis la conquête du royaume de Champa par l'empereur Lê Thanh Tông en 1471, le pays a hérité également de nombreux temples rattachés à l'indouïsme."
+      ],
+      "excurs": true,
+      "food": true,
+      "activite": false,
+      "masken": "hotel",
+      "photo2": "assets/vietnamSearch.jpg",
+      "photo3": "assets/vietnamP3.jpg",
+      "poucentagePromo": 70
+    },
+    {
+      "id": 5,
+      "libelle": "canne",
+      "photo": "assets/safrat/singapore.jpg",
+      "prix": 4000,
+      "enpromo": false,
+      "dateDep": "2022-05-27",
+      "tabinfo": [
+        "Canne",
+        "est une commune française de la communauté d'agglomération Cannes Pays de Lérins située dans le département des Alpes-Maritimes, en région Provence-Alpes-Côte d'Azur, sur la Côte d'Azur dont elle est une ville phare. Ses habitants sont appelés les Cannois(es) en français et les canenc(a) en provençal (prononcé localement canenc et canenco). Village de pêcheurs ligure pendant l’Antiquité, liée aux légendes de saint Honorat et de l’homme au masque de fer sur les îles de Lérins au large de la baie de Cannes, station climatique et balnéaire de la Côte d'Azur au xixe siècle, la ville prend son essor avec la construction de résidences de villégiature par les aristocrates anglais et russes puis, dès le début du xxe siècle, d'hôtels de luxe destinés aux touristes fortunés, constituant son patrimoine architectural. "
+      ],
+      "excurs": true,
+      "food": true,
+      "activite": true,
+      "masken": "villa",
+      "photo2": "assets/canneSearch.jpg",
+      "photo3": "assets/canneP3.jpg",
+      "poucentagePromo": 0
+    },
+    {
+      "id": 6,
+      "libelle": "Singapore",
+      "photo": "assets/safrat/singapore.jpg",
+      "prix": 4700,
+      "enpromo": true,
+      "dateDep": "2022-8-1",
+      "tabinfo": [
+        "Singapore",
+        "est une cité-État d'Asie du Sud-Est. Sa superficie est de 724,2 km27. Elle comprend 63 îles, dont la principale est Pulau Ujong (584,8 km2). Cette île est très densément urbanisée, mais la végétation luxuriante – même en plein centre-ville – a valu à Singapour le surnom de « ville jardin ». Cette abondance de verdure découle en partie d'un climat équatorial, uniformément chaud et orageux tout au long de l'année. Sa densité de population est la deuxième plus élevée au monde parmi les États indépendants (après Monaco). L'État de Singapour est situé à l'extrême sud de la péninsule Malaise, dont il est séparé au nord par le détroit de Johor, et borde au sud le détroit de Singapour."
+      ],
+      "excurs": false,
+      "food": true,
+      "activite": true,
+      "masken": "appartement",
+      "photo2": "assets/singaporeSearch.jpg",
+      "photo3": "assets/singaporeP3.jfif",
+      "poucentagePromo": 50
+    },
+    {
+      "id": 7,
+      "libelle": "Paris",
+      "photo": "assets/bolden/paris.jpg",
+      "prix": 4700,
+      "enpromo": true,
+      "dateDep": "2022-8-1",
+      "tabinfo": [
+        "Singapore",
+        "est une cité-État d'Asie du Sud-Est. Sa superficie est de 724,2 km27. Elle comprend 63 îles, dont la principale est Pulau Ujong (584,8 km2). Cette île est très densément urbanisée, mais la végétation luxuriante – même en plein centre-ville – a valu à Singapour le surnom de « ville jardin ». Cette abondance de verdure découle en partie d'un climat équatorial, uniformément chaud et orageux tout au long de l'année. Sa densité de population est la deuxième plus élevée au monde parmi les États indépendants (après Monaco). L'État de Singapour est situé à l'extrême sud de la péninsule Malaise, dont il est séparé au nord par le détroit de Johor, et borde au sud le détroit de Singapour."
+      ],
+      "excurs": false,
+      "food": true,
+      "activite": true,
+      "masken": "appartement",
+      "photo2": "assets/parisSearch.jpg",
+      "photo3": "assets/parisP3.jpg",
+      "poucentagePromo": 50
+    },
+    {
+      "id": 8,
+      "libelle": "Tokyo",
+      "photo": "assets/safrat/tokyo.jpg",
+      "prix": 4700,
+      "enpromo": true,
+      "dateDep": "2022-8-1",
+      "tabinfo": [
+        "Singapore",
+        "est une cité-État d'Asie du Sud-Est. Sa superficie est de 724,2 km27. Elle comprend 63 îles, dont la principale est Pulau Ujong (584,8 km2). Cette île est très densément urbanisée, mais la végétation luxuriante – même en plein centre-ville – a valu à Singapour le surnom de « ville jardin ». Cette abondance de verdure découle en partie d'un climat équatorial, uniformément chaud et orageux tout au long de l'année. Sa densité de population est la deuxième plus élevée au monde parmi les États indépendants (après Monaco). L'État de Singapour est situé à l'extrême sud de la péninsule Malaise, dont il est séparé au nord par le détroit de Johor, et borde au sud le détroit de Singapour."
+      ],
+      "excurs": false,
+      "food": true,
+      "activite": true,
+      "masken": "appartement",
+      "photo2": "assets/tokyoSearch.jpg",
+      "photo3": "assets/tokyoP3.jpg",
+      "poucentagePromo": 50
+    }
+  ]
+}
